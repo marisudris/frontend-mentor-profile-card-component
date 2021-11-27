@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/** Resets **/
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/** Base styles**/
+:root {
+  --clr-primary-cyan: hsl(185, 75%, 39%);
+  --clr-primary-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --clr-primary-dark-grayish-blue: hsl(227, 10%, 46%);
+  --clr-neutral-dark-gray: hsl(0, 0%, 59%);
+
+  --font: ;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+  background: url(./images/bg-pattern-top.svg) right 50vw top -550px no-repeat,
+    url(./images/bg-pattern-bottom.svg) left 50vw top 400px no-repeat,
+    var(--clr-primary-cyan);
+}
+
+.header,
+.footer {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.content {
+  display: grid;
+  place-content: center;
+  padding: 1.5rem;
+}
+
+.footer {
+  font-size: 11px;
+  text-align: center;
+}
+
+.footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+/** Card styles **/
+.card {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+/** Utility classes **/
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  width: 1px;
+}
