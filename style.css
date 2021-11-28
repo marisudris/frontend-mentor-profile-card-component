@@ -79,6 +79,41 @@ body {
   overflow: hidden;
 }
 
+.card__profile {
+  padding-bottom: 1.75em;
+  text-align: center;
+}
+
+.card__profile > * + * {
+  margin-top: 1.25em;
+}
+
+.card__avi {
+  background-color: var(--clr-white);
+  border-radius: 50%;
+  border: var(--avi-border-width) solid var(--clr-white);
+  margin-top: calc(var(--avi-height) / 2 * -1);
+}
+
+.card__bio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.5em;
+  color: var(--clr-primary-dark-grayish-blue);
+}
+
+.card__name {
+  font-size: var(--font-name);
+  color: var(--clr-primary-very-dark-desaturated-blue);
+}
+
+.card__address {
+  flex-basis: 100%;
+  font-size: 15px;
+}
+
 /** Utility classes **/
 .visually-hidden {
   border: 0;
