@@ -30,6 +30,7 @@ img {
   --clr-primary-very-dark-desaturated-blue: hsl(229, 23%, 23%);
   --clr-primary-dark-grayish-blue: hsl(227, 10%, 46%);
   --clr-neutral-dark-gray: hsl(0, 0%, 59%);
+  --clr-white: hsl(0, 0%, 100%);
 
   --font: ;
 }
@@ -68,6 +69,9 @@ body {
 /** Card styles **/
 .card {
   font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--clr-white);
+  border-radius: 13px;
+  overflow: hidden;
 }
 
 /** Utility classes **/
