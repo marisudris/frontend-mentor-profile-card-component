@@ -32,7 +32,12 @@ img {
   --clr-neutral-dark-gray: hsl(0, 0%, 59%);
   --clr-white: hsl(0, 0%, 100%);
 
-  --font: ;
+  --card-border-radius: 13px;
+  --avi-border-width: 5px;
+  --avi-height: calc(96px + 2 * var(--avi-border-width));
+
+  --font-name: 18px;
+  --font-stats: 18px;
 }
 
 body {
@@ -70,7 +75,7 @@ body {
 .card {
   font-family: "Kumbh Sans", sans-serif;
   background-color: var(--clr-white);
-  border-radius: 13px;
+  border-radius: var(--card-border-radius);
   overflow: hidden;
 }
 
